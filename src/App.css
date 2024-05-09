@@ -1,0 +1,141 @@
+/* Basic Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9ecef; /* Soft gray for a professional look */
+}
+
+body {
+  color: #212529;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+
+/* Navbar styling */
+.navbar {
+  position: relative;
+  width: 100%;
+  background-color: #4812e9; /* Deep blue for a sleek look */
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar:hover {
+  background-color: #3a0fc4; /* Darker blue on hover for navbar */
+}
+
+/* Main content area styling */
+.container {
+  flex-grow: 1;
+  padding: 70px 20px;
+  overflow-y: auto;
+  margin-top: 50px;
+  margin-bottom: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, p {
+  color: #343a40;
+  text-align: center;
+}
+
+/* Input and Button Styling */
+.input-group {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.input-group > input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 4px 0 0 4px;
+}
+
+.input-group > button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+}
+
+.input-group > button:hover {
+  background-color: #0056b3;
+}
+
+/* Task list styling */
+.task-list {
+  list-style: none;
+}
+
+.task-item {
+  padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item:hover {
+  background-color: #f8f9fa; /* Light gray background on hover for task items */
+}
+
+.task-item:last-child {
+  border-bottom: none;
+}
+
+button.delete-button, .clear-button {
+  background-color: #dc3545;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button.delete-button:hover, .clear-button:hover {
+  background-color: #bd2130;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+button {
+  margin: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 50px 10px;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  position: relative;
+  overflow: hidden;
+}

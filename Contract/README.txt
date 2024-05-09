@@ -1,0 +1,1 @@
+The ABI and address used to export the Smart Contract to the Dapp through the config.js file were obtained by deploying the TaskManager.sol in the contracts folder.
